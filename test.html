@@ -1,0 +1,20 @@
+<html ng-app="myApp">
+	
+<body ng-controller="cntr">
+	<input type="text" ng-valid-required/>
+	<button ng-click="fun()">submit</button>
+	
+	<script src="https://code.angularjs.org/1.5.5/angular.min.js"></script>
+	<script>
+		var app= angular.module('myApp',[]);
+		app.controller('cntr',function($scope){
+			console.log("cntr");
+			$scope.fun = function(){
+				
+				console.log("inside fun");
+			 }
+		});
+			 
+	</script>
+</body>
+</html>
